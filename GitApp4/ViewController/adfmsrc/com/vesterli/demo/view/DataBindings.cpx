@@ -2,9 +2,11 @@
 <Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.1.2.66.68" id="DataBindings"
              SeparateXMLFiles="false" Package="com.vesterli.demo.view" ClientType="Generic">
   <pageMap>
+    <page path="/deptpage.jsf" usageId="com_vesterli_demo_view_deptpagePageDef"/>
     <page path="/emppage.jsf" usageId="com_vesterli_demo_view_emppagePageDef"/>
   </pageMap>
   <pageDefinitionUsages>
+    <page id="com_vesterli_demo_view_deptpagePageDef" path="com.vesterli.demo.view.pageDefs.deptpagePageDef"/>
     <page id="com_vesterli_demo_view_emppagePageDef" path="com.vesterli.demo.view.pageDefs.emppagePageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
