@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="AppModule"
+  Version="12.1.2.66.68"
+  InheritPersonalization="merge"
+  ClearCacheOnRollback="true">
+  <ViewUsage
+    Name="DeptView1"
+    ViewObjectName="com.vesterli.demo.model.view.DeptView"/>
+  <ViewUsage
+    Name="EmpView1"
+    ViewObjectName="com.vesterli.demo.model.view.EmpView"/>
+  <ViewUsage
+    Name="EmpView2"
+    ViewObjectName="com.vesterli.demo.model.view.EmpView"/>
+  <ViewLinkUsage
+    Name="FkDeptnoLink1"
+    ViewLinkObjectName="com.vesterli.demo.model.view.link.FkDeptnoLink"
+    SrcViewUsageName="com.vesterli.demo.model.am.AppModule.DeptView1"
+    DstViewUsageName="com.vesterli.demo.model.am.AppModule.EmpView2"
+    Reversed="false"/>
+</AppModule>
