@@ -5,7 +5,6 @@ public class Class1 {
         super();
     }
     public String myMethod(String v) {
-        return "Greetings2, " + v;
+        return "Hello " + v;
     }
-
 }
