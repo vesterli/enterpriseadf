@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
+   <AppModuleConfigBag ApplicationName="com.dmcsol.xdm.common.model.am.TestCommonModelService">
+      <AppModuleConfig name="TestCommonModelServiceLocal" jbo.project="com.dmcsol.xdm.common.model.CommonModel" ApplicationName="com.dmcsol.xdm.common.model.am.TestCommonModelService" DeployPlatform="LOCAL">
+         <Database jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="com.dmcsol.xdm.common.model.am.TestCommonModelService"/>
+         <Custom ns0:JDBCDataSource="java:comp/env/jdbc/scottDS" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="TestCommonModelServiceShared" jbo.project="com.dmcsol.xdm.common.model.CommonModel" ApplicationName="com.dmcsol.xdm.common.model.am.TestCommonModelService" DeployPlatform="LOCAL">
+         <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+         <Database jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="com.dmcsol.xdm.common.model.am.TestCommonModelService"/>
+         <Custom ns0:JDBCDataSource="java:comp/env/jdbc/scottDS" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>

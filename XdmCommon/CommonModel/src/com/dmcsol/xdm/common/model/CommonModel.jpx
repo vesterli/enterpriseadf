@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE JboProject SYSTEM "jbo_03_01.dtd">
+<!---->
+<JboProject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="CommonModel"
+  Version="12.1.2.66.68"
+  SeparateXMLFiles="true"
+  PackageName="com.dmcsol.xdm.common.model">
+  <DesignTime>
+    <Attr Name="_jprName" Value="../../../../../../CommonModel.jpr"/>
+    <Attr Name="_jbo.TypeMapEntries" Value="OracleApps"/>
+    <Attr Name="_NamedConnection" Value="scott"/>
+    <Attr Name="_appModuleNames0" Value="com.dmcsol.xdm.common.model.am.TestCommonModelService"/>
+  </DesignTime>
+  <Containee
+    Name="am"
+    PackageName="com.dmcsol.xdm.common.model.am"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_AM" Value="true"/>
+    </DesignTime>
+  </Containee>
+  <Containee
+    Name="assoc"
+    PackageName="com.dmcsol.xdm.common.model.entity.assoc"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_AS" Value="true"/>
+    </DesignTime>
+  </Containee>
+  <Containee
+    Name="entity"
+    PackageName="com.dmcsol.xdm.common.model.entity"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_EO" Value="true"/>
+    </DesignTime>
+  </Containee>
+  <Containee
+    Name="view"
+    PackageName="com.dmcsol.xdm.common.model.view"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_VO" Value="true"/>
+    </DesignTime>
+  </Containee>
+</JboProject>
