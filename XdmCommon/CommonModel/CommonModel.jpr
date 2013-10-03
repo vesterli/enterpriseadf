@@ -18,7 +18,6 @@
       <value n="oracle.ide.model.Project" v="12.1.2.0.0"/>
       <value n="oracle.ide.model.ResourcePathsMigrator" v="11.1.1.1.0"/>
       <value n="oracle.ideimpl.model.TechnologyScopeUpdateMigrator" v="11.1.2.0.0.4"/>
-      <value n="oracle.jbo.dt.jclient.migrator.JCProjectMigrator" v="11.1.1.1.0"/>
       <value n="oracle.jbo.dt.jdevx.deployment.JbdProjectMigrator" v="11.1.2.0.0"/>
       <value n="oracle.jbo.dt.jdevx.ui.appnav.APProjectMigrator" v="11.1.1.0.1.5"/>
       <value n="oracle.jbo.dt.migrate.ResourceBundlePathMigrator" v="11.1.1.0.1.5"/>
@@ -55,14 +54,15 @@
       <string v="oracle.bm.commonIde.data.project.ModelerProjectSettings/modelersContentSet"/>
       <string v="oracle.toplink.workbench.addin/toplinkContentSet"/>
    </list>
-   <value n="defaultPackage" v="com.dmcsol.xdm.common.model"/>
-   <value n="jbo.JpxName" v="com.dmcsol.xdm.common.model.CommonModel"/>
+   <value n="defaultPackage" v="com.dmcsol.xdm.model"/>
+   <value n="jbo.JpxName" v="com.dmcsol.xdm.model.CommonModel"/>
    <value n="jbo.NoAttrEnumClasses" v="true"/>
    <value n="JboProject" v="true"/>
    <hash n="oracle.ide.model.TechnologyScopeConfiguration">
       <list n="technologyScope">
          <string v="ADFbc"/>
          <string v="Java"/>
+         <string v="Maven"/>
          <string v="XML"/>
       </list>
    </hash>
@@ -74,35 +74,26 @@
    <value n="oracle.jbo.VOPackage" v="view"/>
    <hash n="oracle.jdeveloper.compiler.OjcConfiguration">
       <list n="copyRes">
-         <string v="**/*.cpx"/>
-         <string v="**/*.dcx"/>
-         <string v="**/*.ejx"/>
-         <string v="**/*.gif"/>
-         <string v="**/*.ini"/>
-         <string v="**/*.jpeg"/>
-         <string v="**/*.jpg"/>
-         <string v="**/*.png"/>
-         <string v="**/*.properties"/>
-         <string v="**/*.sva"/>
-         <string v="**/*.tag"/>
-         <string v="**/*.tld"/>
-         <string v="**/*.wsdl"/>
-         <string v="**/*.xcfg"/>
-         <string v="**/*.xlf"/>
-         <string v="**/*.xml"/>
-         <string v="**/*.xsd"/>
-         <string v="**/*.xsl"/>
+         <string v=".cpx"/>
+         <string v=".dcx"/>
+         <string v=".ejx"/>
+         <string v=".gif"/>
+         <string v=".ini"/>
+         <string v=".jpeg"/>
+         <string v=".jpg"/>
+         <string v=".png"/>
+         <string v=".properties"/>
+         <string v=".sva"/>
+         <string v=".tag"/>
+         <string v=".tld"/>
+         <string v=".wsdl"/>
+         <string v=".xcfg"/>
+         <string v=".xlf"/>
          <string v=".xml"/>
+         <string v=".xsd"/>
+         <string v=".xsl"/>
          <string v=".jpx"/>
          <string v=".rpx"/>
-         <string v=".xcfg"/>
-         <string v=".xml"/>
-         <string v=".xml"/>
-         <string v=".xml"/>
-         <string v=".xml"/>
-         <string v=".xml"/>
-         <string v=".xml"/>
-         <string v=".xml"/>
       </list>
       <value n="internalEncoding" v="UTF-8"/>
       <value n="webIANAEncoding" v="UTF-8"/>
@@ -154,6 +145,9 @@
          <string v="adflibXdmCommonModel"/>
       </list>
    </hash>
+   <hash n="oracle.jdeveloper.maven.compiler.MavenConfiguration">
+      <url n="pomfileURL" path="pom.xml"/>
+   </hash>
    <hash n="oracle.jdeveloper.model.J2eeSettings">
       <value n="j2eeWebAppName" v="XdmCommon-CommonModel-webapp"/>
       <value n="j2eeWebContextRoot" v="XdmCommon-CommonModel-context-root"/>
@@ -189,6 +183,38 @@
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
+            <value n="id" v="BC4J Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF Model Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="MDS Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="MDS Runtime Dependencies"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="BC4J Security"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Oracle JDBC"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="BC4J Oracle Domains"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF Library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
             <value n="id" v="Resource Bundle Support"/>
             <value n="isJDK" v="false"/>
          </hash>
@@ -197,6 +223,18 @@
             <value n="isJDK" v="false"/>
          </hash>
       </list>
+      <hash n="internalDefinitions">
+         <list n="libraryDefinitions">
+            <hash>
+               <list n="classPath">
+                  <url path="../../XdmLib/adflibXdmCommonCode.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="ADF Library"/>
+               <value n="id" v="ADF Library"/>
+            </hash>
+         </list>
+      </hash>
       <list n="libraryReferences">
          <hash>
             <value n="id" v="BC4J Runtime"/>
@@ -227,6 +265,38 @@
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
+            <value n="id" v="BC4J Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF Model Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="MDS Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="MDS Runtime Dependencies"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="BC4J Security"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Oracle JDBC"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="BC4J Oracle Domains"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF Library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
             <value n="id" v="Resource Bundle Support"/>
             <value n="isJDK" v="false"/>
          </hash>
@@ -238,9 +308,5 @@
    </hash>
    <hash n="oracle.jdevimpl.config.JProjectPaths">
       <url n="outputDirectory" path="classes/"/>
-   </hash>
-   <hash n="ResourceBundleOptions">
-      <value n="DefaultBundleTypeId" v="xliffResourceBundleId"/>
-      <list n="RegisteredResourceBundles"/>
    </hash>
 </jpr:project>

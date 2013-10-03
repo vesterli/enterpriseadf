@@ -1,0 +1,29 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
+   <AppModuleConfigBag ApplicationName="com.dmcsol.xdm.model.am.XdmCommonModelTest">
+      <AppModuleConfig name="XdmCommonModelTestLocal" jbo.project="com.dmcsol.xdm.model.CommonModel" ApplicationName="com.dmcsol.xdm.model.am.XdmCommonModelTest" DeployPlatform="LOCAL">
+         <Database jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="com.dmcsol.xdm.model.am.XdmCommonModelTest"/>
+         <Custom ns0:JDBCDataSource="java:comp/env/jdbc/XdmDS" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="XdmCommonModelTestShared" jbo.project="com.dmcsol.xdm.model.CommonModel" ApplicationName="com.dmcsol.xdm.model.am.XdmCommonModelTest" DeployPlatform="LOCAL">
+         <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+         <Database jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="com.dmcsol.xdm.model.am.XdmCommonModelTest"/>
+         <Custom ns0:JDBCDataSource="java:comp/env/jdbc/XdmDS" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+   <AppModuleConfigBag ApplicationName="com.dmcsol.xdm.model.am.XdmLovService">
+      <AppModuleConfig name="XdmLovServiceLocal" jbo.project="com.dmcsol.xdm.model.CommonModel" ApplicationName="com.dmcsol.xdm.model.am.XdmLovService" DeployPlatform="LOCAL">
+         <Database jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="com.dmcsol.xdm.model.am.XdmLovService"/>
+         <Custom ns0:JDBCDataSource="java:comp/env/jdbc/XdmDS" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="XdmLovServiceShared" jbo.project="com.dmcsol.xdm.model.CommonModel" ApplicationName="com.dmcsol.xdm.model.am.XdmLovService" DeployPlatform="LOCAL">
+         <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+         <Database jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="com.dmcsol.xdm.model.am.XdmLovService"/>
+         <Custom ns0:JDBCDataSource="java:comp/env/jdbc/XdmDS" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>

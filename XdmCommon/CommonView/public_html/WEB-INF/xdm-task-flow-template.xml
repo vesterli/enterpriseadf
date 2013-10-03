@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-template id="xdm-task-flow-template">
+    <default-activity>exceptionPage</default-activity>
+    <exception-handler>exceptionPage</exception-handler>
+    <view id="exceptionPage"></view>
+    <use-page-fragments/>
+  </task-flow-template>
+</adfc-config>

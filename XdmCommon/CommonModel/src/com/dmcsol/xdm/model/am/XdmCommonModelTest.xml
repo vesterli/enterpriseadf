@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="XdmCommonModelTest"
+  Version="12.1.2.66.68"
+  InheritPersonalization="merge"
+  ComponentClass="com.dmcsol.xdm.framework.ApplicationModuleImpl"
+  ClearCacheOnRollback="true">
+  <Properties>
+    <SchemaBasedProperties>
+      <LABEL
+        ResId="com.dmcsol.xdm.model.am.XdmCommonModelTest_LABEL"/>
+    </SchemaBasedProperties>
+  </Properties>
+  <ViewUsage
+    Name="XdmElementsView1"
+    ViewObjectName="com.dmcsol.xdm.model.view.XdmElementsView"/>
+  <ViewUsage
+    Name="XdmPersonsView1"
+    ViewObjectName="com.dmcsol.xdm.model.view.XdmPersonsView"/>
+  <ViewUsage
+    Name="XdmProgrammesView1"
+    ViewObjectName="com.dmcsol.xdm.model.view.XdmProgrammesView"/>
+  <ViewUsage
+    Name="XdmTasksView1"
+    ViewObjectName="com.dmcsol.xdm.model.view.XdmTasksView"/>
+  <ResourceBundle>
+    <PropertiesBundle
+      PropertiesFile="com.dmcsol.xdm.model.CommonModelBundle"/>
+  </ResourceBundle>
+</AppModule>
