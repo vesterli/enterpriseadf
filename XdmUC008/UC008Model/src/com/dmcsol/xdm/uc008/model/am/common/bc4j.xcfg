@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
+   <AppModuleConfigBag ApplicationName="com.dmcsol.xdm.uc008.model.am.XdmUC008Service">
+      <AppModuleConfig name="XdmUC008ServiceLocal" jbo.project="com.dmcsol.xdm.uc008.model.UC008Model" ApplicationName="com.dmcsol.xdm.uc008.model.am.XdmUC008Service" DeployPlatform="LOCAL">
+         <Database jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="com.dmcsol.xdm.uc008.model.am.XdmUC008Service"/>
+         <Custom ns0:JDBCDataSource="java:comp/env/jdbc/XdmDS" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="XdmUC008ServiceShared" jbo.project="com.dmcsol.xdm.uc008.model.UC008Model" ApplicationName="com.dmcsol.xdm.uc008.model.am.XdmUC008Service" DeployPlatform="LOCAL">
+         <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+         <Database jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="com.dmcsol.xdm.uc008.model.am.XdmUC008Service"/>
+         <Custom ns0:JDBCDataSource="java:comp/env/jdbc/XdmDS" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>
