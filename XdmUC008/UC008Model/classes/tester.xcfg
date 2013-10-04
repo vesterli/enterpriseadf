@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
+   <AppModuleConfigBag ApplicationName="com.dmcsol.xdm.uc008.model.am.XdmUC008Service">
+      <AppModuleConfig name="1418483910E" JDBCName="Xdm" DeployPlatform="LOCAL" jbo.project="com.dmcsol.xdm.uc008.model.UC008Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="XdmUC008ServiceLocal" ApplicationName="com.dmcsol.xdm.uc008.model.am.XdmUC008Service" DBconnection="java:comp/env/jdbc/XdmDS">
+         <Database jbo.TypeMapEntries="OracleApps" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="com.dmcsol.xdm.uc008.model.am.XdmUC008Service"/>
+         <Tester FullProxyInterfaceName="com.dmcsol.xdm.uc008.model.am.common.XdmUC008Service"/>
+         <Custom ns0:LastUsedConfiguration="XdmUC008ServiceLocal" ns0:JDBCDataSource="java:comp/env/jdbc/XdmDS" ns0:_testers_credentials_needed="false" ns0:ns0="http://xmlns.oracle.com/bc4j/configuration" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>
