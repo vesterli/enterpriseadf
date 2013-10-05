@@ -70,5 +70,8 @@
         <Item Value="ExecuteWithParams_pText"/>
       </AttrNames>
     </attributeValues>
+    <action id="Commit" RequiresUpdateModel="true" Action="commitTransaction" DataControl="XdmUC008ServiceDataControl"/>
+    <action id="Rollback" RequiresUpdateModel="false" Action="rollbackTransaction"
+            DataControl="XdmUC008ServiceDataControl"/>
   </bindings>
 </pageDefinition>
