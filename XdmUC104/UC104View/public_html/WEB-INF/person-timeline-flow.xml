@@ -5,7 +5,10 @@
       <document>/WEB-INF/xdm-task-flow-template.xml</document>
       <id>xdm-task-flow-template</id>
     </template-reference>
-    <view id="personTimeline"></view>
+    <default-activity>personTimeline</default-activity>
+    <view id="personTimeline">
+      <page>/personTimeline.jsff</page>
+    </view>
     <use-page-fragments/>
   </task-flow-definition>
 </adfc-config>

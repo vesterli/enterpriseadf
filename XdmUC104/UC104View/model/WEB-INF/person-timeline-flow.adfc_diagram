@@ -14,6 +14,8 @@
       <property
          name="activityId">exceptionPage</property>
       <property
+         name="start">false</property>
+      <property
          name="description">&lt;html>&lt;p>&lt;b>exceptionPage&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
       <property
          name="exceptionHandler">false</property>
@@ -29,14 +31,18 @@
       <property
          name="activityId">personTimeline</property>
       <property
-         name="description">&lt;html>&lt;p>&lt;b>personTimeline&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+         name="page">/personTimeline.jsff</property>
+      <property
+         name="start">true</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>personTimeline&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
       <property
          name="exceptionHandler">false</property>
       <property
-         name="y">241.94824</property>
-      <property
-         name="x">438.0</property>
+         name="y">241.24707</property>
       <property
          name="pageFragment">true</property>
+      <property
+         name="x">438.0</property>
    </View>
 </SDM>
