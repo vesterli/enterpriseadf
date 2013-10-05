@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="TasksVO"
+  Version="12.1.2.66.68"
+  InheritPersonalization="merge"
+  SelectList="XdmTasks.START_DATE, 
+       XdmTasks.TASK_ID, 
+       XdmTasks.END_DATE, 
+       XdmTasks.PERS_ID"
+  FromList="XDM_TASKS XdmTasks"
+  Where="start_date is not null and end_date is not null"
+  BindingStyle="JDBC"
+  CustomQuery="false"
+  RowClass="com.dmcsol.xdm.framework.ViewRowImpl"
+  ComponentClass="com.dmcsol.xdm.framework.ViewObjectImpl"
+  FetchMode="FETCH_AS_NEEDED"
+  PageIterMode="Full">
+  <Properties>
+    <SchemaBasedProperties>
+      <LABEL
+        ResId="com.dmcsol.xdm.uc104.model.view.TasksVO_LABEL"/>
+    </SchemaBasedProperties>
+  </Properties>
+  <EntityUsage
+    Name="XdmTasks"
+    Entity="com.dmcsol.xdm.model.entity.XdmTasks"
+    ReadOnly="true"
+    DeleteParticipant="false"/>
+  <ViewAttribute
+    Name="StartDate"
+    IsUpdateable="false"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="StartDate"
+    EntityUsage="XdmTasks"
+    AliasName="START_DATE"/>
+  <ViewAttribute
+    Name="TaskId"
+    IsUpdateable="while_insert"
+    PrecisionRule="true"
+    EntityAttrName="TaskId"
+    EntityUsage="XdmTasks"
+    AliasName="TASK_ID"/>
+  <ViewAttribute
+    Name="EndDate"
+    PrecisionRule="true"
+    EntityAttrName="EndDate"
+    EntityUsage="XdmTasks"
+    AliasName="END_DATE"/>
+  <ViewAttribute
+    Name="PersId"
+    PrecisionRule="true"
+    EntityAttrName="PersId"
+    EntityUsage="XdmTasks"
+    AliasName="PERS_ID"/>
+  <ResourceBundle>
+    <PropertiesBundle
+      PropertiesFile="com.dmcsol.xdm.uc104.model.UC104ModelBundle"/>
+  </ResourceBundle>
+</ViewObject>
