@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="Xdm.jsf" id="d1">
+        <af:form id="f1">
+            <af:pageTemplate viewId="/WEB-INF/XdmPageTemplate.jsf" id="pt1">
+                <f:facet name="main">
+                    <af:panelStretchLayout id="psl1">
+                        <f:facet name="bottom"/>
+                        <f:facet name="center">
+                            <af:region value="#{bindings.dynamicRegion1.regionModel}" id="r1"/>
+                        </f:facet>
+                        <f:facet name="start"/>
+                        <f:facet name="end"/>
+                        <f:facet name="top">
+                            <af:menuBar id="mb1">
+                                <af:menu text="menu 1" id="m1">
+                                    <af:commandMenuItem text="commandMenuItem 1" id="cmi1">
+                                        <af:setPropertyListener from="#{'/WEB-INF/task-edit-overview-flow.xml#task-edit-overview-flow'}"
+                                                                to="#{sessionScope.UiStateBean.currentTF}"
+                                                                type="action"/>
+                                    </af:commandMenuItem>
+                                    <af:commandMenuItem text="commandMenuItem 2" id="cmi2">
+                                        <af:setPropertyListener from="#{'/WEB-INF/person-timeline-flow.xml#person-timeline-flow'}"
+                                                                to="#{sessionScope.UiStateBean.currentTF}"
+                                                                type="action"/>
+                                    </af:commandMenuItem>
+                                </af:menu>
+                            </af:menuBar>
+                        </f:facet>
+                    </af:panelStretchLayout>
+                </f:facet>
+                <f:attribute name="PageTitle" value="Next Generation Dest Mgmt"/>
+            </af:pageTemplate>
+        </af:form>
+    </af:document>
+</f:view>
